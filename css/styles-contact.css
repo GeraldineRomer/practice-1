@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    & .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #eeeeee;
+        padding: 10px 20px;
+        & ul{
+            /* top right bottom left */
+            /* solo dos: top-bottom, left-right */
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            margin-right: auto;
+            & li {
+                margin-right: 20px;
+                & a{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    padding: 5px 10px;
+                    transition: background-color 0.3s;
+                    &:hover{
+                        color: blue;
+                        background-color: rgba(137, 222, 255, 0.192);
+                    }
+                    &:active{
+                        color: rgb(204, 75, 75);
+                        font-weight: 700;
+                        &::after{
+                            background-color: #bebbbbc9;
+                        }
+                    }
+                }
+            }
+        }
+        & img{
+            max-height: 100px;
+            width: auto;
+            margin: 0 20px;
+        }
+        .avatar-container{
+            display: flex;
+            align-items: center;
+            & img.avatar{
+                max-width: 60px;
+                height: auto;
+                border-radius: 50%;
+                border: 2px solid #9c9c9c;
+                margin-left: 20px;
+            }
+        }
+    }
+    & .content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    & .card{
+        width: 190px;
+        height: 254px;
+        background-color: #292828;
+        border-radius: 10px;
+        margin: 10px 20px ;
+        display: flex;
+        flex-direction: column;
+        box-shadow: #292828;
+        align-items: center;
+        & .head-card{
+            border-radius: 10px;
+            background-color: #ff5858;
+            height: 28%;
+            width: 100%;
+            display: flex;
+            & .a{
+                width: 40%;
+                height: 100%;
+                margin-right: 0px;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                & .a-content {
+                    background-color: #414141;
+                    border-radius: 10px;
+                    margin: 10px 20px;
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+            & .b{
+                width: 60%;
+                height: 100%;
+                flex-direction: column;
+                & .ba {
+                    background-color: #414141;
+                    border-radius: 10px;
+                    margin: 10px 20px;
+                    width: 40px;
+                    height: 20px;
+                }
+                & .bb {
+                    background-color: #414141;
+                    border-radius: 10px;
+                    margin: 10px 20px;
+                    width: 80px;
+                    height: 20px;
+                }
+            }
+        }
+        & .content-card{
+            display: flex;
+            margin: 5px 5px;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            & .a{
+                height: 90%;
+                width: 95%;
+                background-color: #414141;
+                border-radius: 10px;
+                margin-left: 4.5px;
+            }
+            & .b{
+                margin-top: 5px;
+                height: 1%;
+                width: 100%;
+                background-color: #414141;
+                border-radius: 10px;
+            }
+        }
+        & .footerCard{
+            display: flex;
+            width: 100%;
+            height: 10%;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+    }
+}
+
+svg{
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    fill: #ff5858;
+}
+
+
